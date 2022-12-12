@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: cursive; */
+}
+img{
+  border: 2px solid #c0c0c0;
+  padding: 5px;
+}
+img:hover{
+  box-shadow: 5px 4px 10px #8b0000;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  width: 100%;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+}
+nav h2 {
+  color: #ffd;
+  font-family: "Sofia", sans-serif;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 90px;
+}
+nav .btn {
+  display: none;
+}
+.toggle {
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffd700;
+  position: relative;
+  transition: 1s ease-in-out;
+  font-size: 3vmin;
+}
+nav ul li a:hover {
+  color: #fce877;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background-color: #ffd700;
+  transition: 1s ease-in-out;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.mobile-nav {
+  display: none;
+}
+/* HERO SECTION */
+.heroSection {
+  width: 100%;
+  height: 100vh;
+}
+.mainImg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Images/MainImage.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+}
+.mainImgText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.mainImgText h1,
+.mainImgText p {
+  color: #fff;
+  font-size: 15vmin;
+  font-family: "Sofia", sans-serif;
+}
+.contentImg {
+  padding-bottom: 20px;
+}
+.contentImg img {
+  width: 100%;
+  max-width: 60vh;
+}
+/* HERO SECTION ENDS */
+
+.aboutUs {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #000;
+  /* visibility: hidden; */
+  transition: 1s ease-in-out;
+}
+.aboutUsText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* visibility: hidden; */
+}
+.aboutUsText h3 {
+  font-size: 6vmin;
+  color: #fff;
+}
+.aboutUsText p {
+  color: #bbb;
+}
+
+.aboutUsContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  gap: 50px;
+}
+.contentText {
+  width: 50%;
+  text-align: center;
+}
+.contentText p {
+  padding-top: 20px;
+  color: #bbb;
+}
+.contentText h2 > i {
+  font-size: 9vmin;
+  color: #fff;
+}
+/* Our love story section */
+.ourLoveStory {
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(231, 247, 247),
+    rgb(245, 201, 201)
+  );
+  transition: 1s ease-in-out;
+}
+.ourLoveStoryTitle h3 {
+  font-family: "Sofia", sans-serif;
+}
+.loveStory,
+.loveStory2,
+.loveStory3,
+.loveStory4,
+.loveStory5,
+.loveStory6,
+.loveStory7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.loveStoryText,
+.loveStoryText2,
+.loveStoryText3,
+.loveStoryText4,
+.loveStoryText5,
+.loveStoryText6,
+.loveStoryText7 {
+  width: 50%;
+  text-align: center;
+}
+.loveStoryText h3,
+.loveStoryText4 h3 {
+  font-size: 6vmin;
+  margin-bottom: 7px;
+  font-family: "Sofia", sans-serif;
+}
+.theEnd {
+  text-align: center;
+  padding: 7px;
+  font-size: 6vmin;
+  font-family: "Sofia", sans-serif;
+}
+.theEnd > span {
+  color: #f22;
+  font-size: 9vmin;
+}
+.ourLoveStoryTitle {
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 50px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+/* Our love story ends */
+.ourToast {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  background-color: #fff !important;
+}
+.toastTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 7px;
+  font-family: "Sofia", sans-serif;
+}
+.toastTitle h2 {
+  font-size: 6vmin;
+  font-family: "Sofia", sans-serif;
+}
+
+.toastImg img {
+  width: 100%;
+  max-width: 50vh;
+}
+
+.PictureSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Picture Slider */
+.slider {
+  width: 100%;
+  max-width: 100%;
+  height: 130vh;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  max-width: 700px;
+  position: absolute;
+  transition: all 0.5s;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slide img {
+  width: 100%;
+}
+.butn {
+  position: absolute;
+  z-index: 10px;
+  cursor: pointer;
+  font-size: 13vmin;
+  color: #fff;
+}
+.butn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 40%;
+  left: 2%;
+}
+.btn-next {
+  top: 40%;
+  right: 2%;
+}
+/* Picture Slider ends */
+
+/* Donation Section */
+.donation {
+  width: 100%;
+  height: 50vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7e68b;
+  text-transform: capitalize;
+}
+.donation h3 {
+  font-size: 5vmin;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.donation h4 {
+  font-size: 4vmin;
+}
+.donation p {
+  margin-bottom: 20px;
+}
+.donation span {
+  font-size: 2.5vmin;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* Donation Section Ends */
+
+/* Venue Section */
+.venueSection {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.venue {
+  display: flex;
+  gap: 30px;
+}
+
+.venueTitle h3 {
+  font-size: 5vmin;
+  margin-top: 5vh;
+  margin-bottom: 5px;
+}
+.venue h4 {
+  font-size: 3.5vmin;
+}
+address {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 2.5vmin;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.rsvp,
+.colorCode {
+  margin-top: 50px;
+}
+.rsvp h3,
+.colorCode h3 {
+  font-size: 5vmin;
+  margin-bottom: 7px;
+}
+
+.colorCode .emeraldGreen {
+  color: #66cdaa;
+}
+.colorCode .gold {
+  color: #ffd700;
+}
+/* Venue Section Ends */
